@@ -1,7 +1,7 @@
-# JQUEUE - Queue 
+# Binary Search Tree
 ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg)
 
-JQUEUE is a Queue challenge from phase 1 of the Brazilian Computing Olympics 2014. This repo is an attempt to solve [SPOJ's version](https://br.spoj.com/problems/JFILA14/) of the problem.
+Binary Search Tree is a binary tree challenge that can by found at [URI](https://www.urionlinejudge.com.br/judge/en/problems/view/1195)
 
 ## Context
 In computer science, a binary search tree (BST), which may sometimes also be called an ordered or sorted binary tree, is a node-based binary tree data structure which has the following properties:
@@ -19,7 +19,7 @@ For this problem, you will receive many set of numbers and from each set you mus
                                                  /  \       \
                                                01   06       14
                                                    / \       /    
-                                                 04   07    13
+                                                 04   07   13
 
 ### Input
 The input file contains many test cases. The first line of input contains an integer C (C ≤ 1000), indicating the number of test cases that follow. Each test case contains two lines. The first line contains a number N (1 ≤ N ≤ 500) indicating the amount of numbers that will form each one of the trees. The second line contains the N distinct non-negative numbers, each one separated by a space.
