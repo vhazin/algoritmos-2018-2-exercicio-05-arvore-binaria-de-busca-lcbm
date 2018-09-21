@@ -1,4 +1,4 @@
-# Binary Search Tree
+# 1195 - Binary Search Tree
 ![PyPI - Status](https://img.shields.io/pypi/status/Django.svg)
 
 Binary Search Tree is a binary tree challenge that can by found at [URI](https://www.urionlinejudge.com.br/judge/en/problems/view/1195)
