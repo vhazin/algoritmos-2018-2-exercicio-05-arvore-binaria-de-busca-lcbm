@@ -15,17 +15,16 @@ void postOrder(Node *);
 int main(void){
     short testCases;
     scanf("%hi", &testCases);
-    for (int test = 1; test <= testCases; test++){
+    short test = 1;
+    for (; test <= testCases; test++){
         short nodes;
         scanf("%hi", &nodes);
-        // Insert
         Node *root = NULL;
         while(nodes--){
             int value;
             scanf("%d ", &value);
-            insert(&root ,initNode(value));
+            insert(&root, initNode(value));
         }
-        // Print results
         printf("Case %d:\n", test);
         printf("Pre.:");
         preOrder(root);
@@ -34,7 +33,6 @@ int main(void){
         printf("\nPost:");
         postOrder(root);
         printf("\n\n");
-        
         free(root);
     }
     return 0;
@@ -48,13 +46,13 @@ Node *initNode(int value){
     return child;
 }
 
-void insert(Node **node, Node *child){
-    if(!*node)
-        *node = child;
-    else if (child->value <= (*node)->value)
-        insert(&(*node)->leftChild, child);
+void insert(Node **parent, Node *child){
+    if(!*parent)
+        *parent = child;
+    else if (child->value <= (*parent)->value)
+        insert(&(*parent)->leftChild, child);
     else
-        insert(&(*node)->rightChild, child);
+        insert(&(*parent)->rightChild, child);
 }
 
 void preOrder(Node *tree){
